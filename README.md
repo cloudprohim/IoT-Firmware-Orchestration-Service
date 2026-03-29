@@ -202,6 +202,31 @@ This project demonstrates:
 
 ---
 
+## ✅ Final Outcome
+
+This project evolved from a real-world IoT firmware upgrade challenge into a fully functional, cloud-native backend deployed on AWS.
+
+### 🚀 Delivered Components
+- Terraform-managed infrastructure (Infrastructure as Code)
+- AWS Lambda-based firmware orchestration logic
+- Amazon S3 for firmware artifact storage
+- IAM role with least-privilege access controls
+- API Gateway HTTP API for device update requests
+- Secure presigned URL generation for firmware delivery
+- End-to-end API validation using Postman
+
+### 💼 Business Value
+This solution demonstrates how legacy IoT devices can be safely upgraded through controlled, staged firmware transitions while securely retrieving update packages from cloud storage.
+
+### 🔄 Example Workflow
+1. Device sends current firmware version to API
+2. API evaluates upgrade path
+3. Lambda determines next required firmware version
+4. System maps logical version to actual firmware file
+5. Presigned S3 URL is generated
+6. Device receives secure download link for upgrade
+
+
 ## 🏷️ Tech Stack
 
 `AWS IoT Core` `Lambda` `S3` `DynamoDB` `Terraform` `MQTT` `Presigned URL`
