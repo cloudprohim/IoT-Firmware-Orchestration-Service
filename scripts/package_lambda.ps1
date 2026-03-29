@@ -1,0 +1,1 @@
+Compress-Archive -Path ..\lambda\orchestrator.py -DestinationPath ..\lambda\orchestrator.zip -Force
